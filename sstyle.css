@@ -1,0 +1,69 @@
+body {
+    background: #dddddd;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background: #ffffff
+}
+
+header {
+    background: #4aaaa5;
+    padding: 10px;
+    width: 100%;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nav {
+    float: right;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+}
+
+ .nav ul li a {
+    text-decoration: none;
+    color: #777777;
+    font-size: 14px;
+}
+
+.nav ul li a:hover {
+    color: #0f0c0c
+}
+
+.nav a::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #0f0c0c;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out: 250m;
+}
+
+.nav a:hover::before {
+    width: 100%;
+}
+
+main {
+    border: 1px #cccccc;
+    width: 500px;
+    margin: 10px;
+}
