@@ -4,45 +4,158 @@
     <link href="sstyle.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <title>Basic Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
+<style>
+#social-links > h3 {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+}
+
+.card-title{
+    color:black;
+}
+</style>
 
 <body>
-
-    <div class="header"> 
         <div class="container">
-            <div class="logo">
-                <h1>Tiana Wiggins</h1>
-            <div class="nav">
-                <ul>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Portfolio</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="row">
+                <div class="col m3 l2">
+                    <div class="fixed-sideNav">
+                        <ul class="section table-of-contents">
+                            <li>
+                                <a href="#about-me">
+                                    About me
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#my-works">
+                                    My works
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact">
+                                    Reach out
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col m9 l10 right">
+                    <section id="about-me" class="row scrollspy">
+                        <div class="col s12">
+                            <h1 class="thin">Hey there, I'm Tiana!</h1>
+                            <p class="flow-text">Thanks for taking some of your time to have a look at this.</p>
+                            <p class="flow-text">I'm actually a full stack web developer creating functioning web applications and building up my portfolio. (or at least, trying to).</p>
+                        </div>
+                    </section>
+                    <section id="my-works" class="row scrollspy">
+                        <h1 class="thin">
+                            I enjoyed working on...
+                        </h1>
+                        <div id="isotope">
+                            <div class="col s12">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="IMAGES/Screen Shot 2019-01-26 at 8.58.14 PM.png">
+                                        <span class="card-title">Giftastic</span>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col s12">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="IMAGES/Screen Shot 2019-01-26 at 9.21.13 PM.png">
+                                        <span class="card-title">Trivia Game</span>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col s12">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="IMAGES/Screen Shot 2019-01-26 at 9.30.11 PM.png">
+                                        <span class="card-title">Train Schedule</span>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col s12">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="IMAGES/Screen Shot 2019-01-26 at 9.37.05 PM.png" class="tilt-effecta"  data-tilt-options='{ "opacity" : 0.6, "extraImgs" : 4, "movement": { "perspective" : 500, "translateX" : 15, "translateY" : 0, "translateZ" : 10, "rotateX" : 3, "rotateY" : 4, "rotateZ" : 1 } }'>
+                                        <span class="card-title">What's For Dinner?</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="col s12">
+                            <h1 class="thin">Links to the art above!</h1>
+                            <p>
+                                <a href=" https://tianaw43311.github.io/Giftastic/">Giftastic: Type in a keyword and images appear.</a>
+                            </p>
+                            <p>
+                                <a href=" https://tianaw43311.github.io/Trivia-Game-/">Trivia Game: Answer questions and see what you know</a>
+                            </p>
+                            <p>
+                                <a href=" https://tianaw43311.github.io/Train-Schedule/">Train Schedule</a>
+                            </p>
+                            <p>
+                                <a href=" ">What's For Dinner?: Enter ingredients from pantry and get recipes.</a>
+                            </p>
+                            
+                        </div>
+                    </section>
+                    <section id="contact" class="row scrollspy">
+                        <div class="col s4">
+                            <h3 class="thin">Find me on: </h3>
+                        </div>
+                        <div id="social-links" class="col s8 right-align">
+                            <h3 class="thin">
+                                <a href="https://github.com/TianaW43311" target="_blank">
+                                    Github
+                                </a>
+                            </h3>
+                        </div>
+                    </section>
+                </div>
+            </div>
         </div>
-     </div>   
-        <br>
-        <br>
-        <br>
-        <br>
-        <div>About Me</div>
-        <hr>
-        <p>Normally, both your asses would be dead as fucking fried chicken, 
-            but you happen to pull this shit while I'm in a transitional 
-            period so I don't wanna kill you, I wanna help you. But I can't 
-            give you this case, it don't belong to me. Besides, I've already 
-            been through too much shit this morning over this case to hand it 
-            over to your dumb ass.
-            <br>
-            <br>
-            Your bones don't break, mine do. That's clear. Your cells react to 
-            bacteria and viruses differently than mine. You don't get sick, I do.
-             That's also clear. But for some reason, you and I react the exact
-              same way to water. We swallow it too fast, we choke. We get some
-               in our lungs, we drown. However unreal it may seem, we are 
-               connected, you and I. We're on the same curve, just on opposite 
-               ends. </p>
 
-    </header>
+        <script>
+        $(document).ready(function(){
+            $(".button-collapse").sideNav();
+          });
+
+          ;(function(window) {
+	      'use strict';
+
+    $('.scrollspy').scrollSpy();
+
+        </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 </html>
